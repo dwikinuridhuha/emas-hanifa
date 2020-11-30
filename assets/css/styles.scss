@@ -253,6 +253,9 @@ img {
   &__container {
     height: calc(100vh - var(--header-height));
     align-content: center;
+    //display: flex;
+    //flex-direction: column-reverse;
+    //background-color: #b5aa63;
   }
 
   &__title {
@@ -615,16 +618,28 @@ img {
   }
 }
 
+@media screen and (max-width: 700px) {
+  .home__container {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+//swipper jangan mencuri
 
 .swiper-container {
   width: 100%;
   height: 100%;
+  background-color: var(--body-color);
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background-color: var(--body-color);
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -639,4 +654,15 @@ img {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+
+  .video_slider {
+    width: 420px;
+    height: 315px;
+  }
+
+  .imgSlider {
+    height: 300px;
+    width: auto;
+    border-radius: 20px;
+  }
 }

@@ -111,7 +111,8 @@ const sr = ScrollReveal({
 sr.reveal(`.home__data, .home__img,
             .about__data, .about__img,
             .services__content, .menu__content,
-            .app__data, .app__img,
+            .section-subtitle, .section-title,
+            .swiper-container,
             .contact__data, .contact__button,
             .footer__content`, {
     interval: 200

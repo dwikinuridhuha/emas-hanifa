@@ -434,14 +434,22 @@ img {
 
   .about__container, .app__container {
     column-gap: 7rem; } }
+@media screen and (max-width: 700px) {
+  .home__container {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100vh;
+    justify-content: center;
+    align-items: center; } }
 .swiper-container {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  background-color: var(--body-color); }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background-color: var(--body-color);
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -455,5 +463,12 @@ img {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center; }
+  .swiper-slide .video_slider {
+    width: 420px;
+    height: 315px; }
+  .swiper-slide .imgSlider {
+    height: 300px;
+    width: auto;
+    border-radius: 20px; }
 
 /*# sourceMappingURL=styles.css.map */
